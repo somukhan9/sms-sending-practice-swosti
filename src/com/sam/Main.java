@@ -12,13 +12,6 @@ public class Main {
 
 
     public boolean isSmsSent(String mobileNo, String msg) throws InterruptedException {
-        System.err.println("TEST ===== 1");
-
-
-        // String userId = this.user;
-        // String passKey = this.pass;
-
-
         String userId = "01833168230";
         String passKey = "NXhQSW45ZGw=";
 
@@ -105,7 +98,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         Main main = new Main();
 
-        boolean isSent = main.isSmsSent("8801303456640", "Your Balance is $10");
+        boolean isSent = main.isSmsSent("8801741473409", "Your Balance is $10");
 
         System.out.println(isSent);
 
