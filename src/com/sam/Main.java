@@ -48,7 +48,8 @@ public class Main {
 
 
         ISmsApiService apiService = RetrofitClientForSms.getInstance().create(ISmsApiService.class);
-        Content content = new Content();
+
+        /*Content content = new Content();
         content.setText("Your Balance is $10");
         content.setType("T");
         Sms sms = new Sms();
@@ -63,7 +64,7 @@ public class Main {
 
         SmsBody smsBody = new SmsBody();
         smsBody.setSms(sms);
-        smsBody.setRecipients(recipients);
+        smsBody.setRecipients(recipients);*/
 
         Call<String> call = apiService.sendMessage(jsonString);
         call.enqueue(new Callback<String>() {
