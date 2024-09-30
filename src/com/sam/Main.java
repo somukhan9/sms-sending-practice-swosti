@@ -37,27 +37,7 @@ public class Main {
                         + "      \"text\": \"%s\"\n" + "    }\n" + "  }\n" + "}",
                 mobileNo, userId, senderId, passKey, maskingTitle, type, msg);
 
-        System.err.println("JSON PAYLOAD = \n" + jsonString);
-
-
         ISmsApiService apiService = RetrofitClientForSms.getInstance().create(ISmsApiService.class);
-
-        /*Content content = new Content();
-        content.setText("Your Balance is $10");
-        content.setType("T");
-        Sms sms = new Sms();
-        sms.setContent(content);
-        sms.setMaskingtitle(maskingTitle);
-        sms.setPasskey(passKey);
-        sms.setUserid(userId);
-        sms.setSenderid(senderId);
-
-        Recipients recipients = new Recipients();
-        recipients.setPhone(mobileNo);
-
-        SmsBody smsBody = new SmsBody();
-        smsBody.setSms(sms);
-        smsBody.setRecipients(recipients);*/
 
         Call<String> call = apiService.sendMessage(jsonString);
         call.enqueue(new Callback<String>() {
