@@ -78,7 +78,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         Main main = new Main();
 
-        boolean isSent = main.isSmsSent("8801741473409", "Your Balance is $10");
+        boolean isSent = main.isSmsSent("8801303456640", "Your Balance is $10");
 
         System.out.println(isSent);
 
