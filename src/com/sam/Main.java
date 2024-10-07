@@ -11,7 +11,7 @@ public class Main {
     private boolean sentSms = false;
 
 
-    public boolean isSmsSent(String mobileNo, String msg) throws InterruptedException {
+    public boolean isSmsSent(String mobileNo, String msg) {
         String userId = "01833168230";
         String passKey = "NXhQSW45ZGw=";
 
