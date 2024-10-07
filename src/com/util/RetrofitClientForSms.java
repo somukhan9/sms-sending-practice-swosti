@@ -12,7 +12,7 @@ import java.net.CookieManager;
 import java.util.concurrent.TimeUnit;
 
 public class RetrofitClientForSms {
-    private static final String baseUrl = "http://210.4.72.162/";
+    private static final String baseUrl = "http://sms.islbd.net/";
     private static Retrofit retrofit;
 
     public static Retrofit getInstance() {
